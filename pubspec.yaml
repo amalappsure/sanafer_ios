@@ -1,0 +1,71 @@
+name: sanafer
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.1.0+6
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+  flutter: '>=3.16.9'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  base_ecom_appsure:
+    path: ../base_ecom_appsure
+
+  add_to_cart_animation: ^2.0.3
+  flutter_screenutil: ^5.9.0
+  firebase_analytics: ^10.8.1
+  firebase_core: ^2.25.0
+  cached_network_image: ^3.3.1
+  get_it: ^7.6.7
+  flutter_riverpod: ^2.4.9
+  auto_route: ^7.8.4
+  sliver_tools: ^0.2.12
+  flutter_svg: ^2.0.7
+  infinite_scroll_pagination: ^4.0.0
+  font_awesome_flutter: ^10.7.0
+  auto_size_text: ^3.0.0
+  url_launcher: ^6.2.4
+  package_info_plus: ^5.0.1
+  easy_sidemenu: ^0.6.0
+
+dev_dependencies:
+  auto_route_generator: ^7.3.2
+  flutter_test:
+    sdk: flutter
+  flutter_gen_runner: ^5.4.0
+  build_runner: ^2.4.8
+  flutter_lints: ^3.0.0
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/fonts/
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/Mulish-Variable.ttf
