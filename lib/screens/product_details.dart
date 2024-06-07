@@ -246,7 +246,7 @@ class ProductDetailsScreenState extends ConsumerState<ProductDetailsScreen> {
                           },
                         ),
                         Text(
-                          "${settings.selectedLocale!.translate('ProductNumber')} #${details.itemCode ?? ''}",
+                          "${settings.selectedLocale!.translate('ProductNumber')} #${details.id ?? ''}",
                           style: Theme.of(context)
                               .textTheme
                               .bodyMedium
@@ -254,7 +254,7 @@ class ProductDetailsScreenState extends ConsumerState<ProductDetailsScreen> {
                         ),
                         const Gap(4),
                         Text(
-                          "${settings.selectedLocale!.translate('ProductCode')} #${details.id}",
+                          "${settings.selectedLocale!.translate('ProductCode')} #${details.itemCode}",
                           style: Theme.of(context)
                               .textTheme
                               .bodyMedium
@@ -335,9 +335,9 @@ class ProductDetailsScreenState extends ConsumerState<ProductDetailsScreen> {
                                   child: _buyNowButton(
                                     count > 0
                                         ? () async {
-                                      // if (cart.isNotEmpty) {
-                                      //   await cart.clearRemoteCart();
-                                      // }
+                                      if (cart.isNotEmpty) {
+                                        await cart.clearRemoteCart();
+                                      }
 
                                       await cart.addToCart(
                                         details.product,

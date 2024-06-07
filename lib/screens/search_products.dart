@@ -170,7 +170,7 @@ class _SearchProductsDialogState extends ConsumerState<_SearchProductsDialog> {
                                 children: [
                                   TextSpan(
                                     text: settings.selectedLocale!.translate(
-                                      'Viewallsearchresultsfor',
+                                      'viewallsearchresultsfor',
                                     ),
                                   ),
                                   TextSpan(

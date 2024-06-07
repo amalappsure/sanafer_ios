@@ -93,7 +93,7 @@ class _ProductsListingScreenState extends ConsumerState<ProductsListingScreen> {
   @override
   Widget build(BuildContext context) {
     ref.watch(productListProvider(family));
-    ref.watch(settingsProvider);
+    final settings = ref.watch(settingsProvider);
     final title = provider.title;
     _initListeners();
     final isRtl = Directionality.of(context) == TextDirection.rtl;
@@ -169,7 +169,7 @@ class _ProductsListingScreenState extends ConsumerState<ProductsListingScreen> {
                 child: Padding(
                   padding: const EdgeInsets.all(8),
                   child: Text(
-                    title,
+                    settings.selectedLocale!.translate(title),
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                 ),

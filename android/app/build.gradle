@@ -63,7 +63,7 @@ android {
         release {
             keyAlias 'uploadS'
             keyPassword 'Smart@1234'
-            storeFile file('C:/Users/Admin/upload-keystore.jks')
+            storeFile file('/Users/StudioProjects/upload-keystore.jks')
             storePassword 'Smart@1234'
         }
     }

@@ -30,53 +30,50 @@ class _DailyPasswordState extends ConsumerState<DailyPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     final settings = ref.watch(settingsProvider);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            const Spacer(),
-            Responsive(
-              mobile: (context, constraints, child) => Assets.images.smartsolns.image(
-                width: MediaQuery.of(context).size.width * 0.45,
-              ),
-              desktop: (context, constraints, child) => Assets.images.smartsolns.image(
-                height: MediaQuery.of(context).size.height * 0.45,
-              ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          const Spacer(),
+          Responsive(
+            mobile: (context, constraints, child) => Assets.images.smartsolns.image(
+              width: MediaQuery.of(context).size.width * 0.45,
             ),
-            const Spacer(),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-              child: TextFieldWithTitleBase.widget(
-                controller: _password,
-                hint: "Enter Password",
-                onChanged: (value) {
+            desktop: (context, constraints, child) => Assets.images.smartsolns.image(
+              height: MediaQuery.of(context).size.height * 0.45,
+            ),
+          ),
+          const Spacer(),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+            child: TextFieldWithTitleBase.widget(
+              controller: _password,
+              hint: "Enter Password",
+              onChanged: (value) {
 
-                },
-                maxLength: 10,
-                counter: const SizedBox.shrink(),
-                // inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                keyboardType: TextInputType.text,
-                textInputAction: TextInputAction.next,
-              ),
+              },
+              maxLength: 10,
+              counter: const SizedBox.shrink(),
+              // inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.next,
             ),
-            const SizedBox(height: 10,),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0, right: 40.0),
-              child: _buyNowButton(
-                  (){
-                    if(_password.text == number){
-                      context.replaceRoute(
-                        const HomeRoute(),
-                      );
-                    }
+          ),
+          const SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+            child: _buyNowButton(
+                    (){
+                  if(_password.text == number){
+                    context.replaceRoute(
+                      const HomeRoute(),
+                    );
                   }
-              ),
+                }
             ),
-            const Spacer()
-          ],
-        ),
+          ),
+          const Spacer()
+        ],
       ),
     );
   }

@@ -104,7 +104,7 @@ class _AccountTabState extends ConsumerState<AccountTab> {
           CompanyInfoRoute(type: InfoType.returnAndExchange),
         ),
         text: settings.selectedLocale!.translate(
-          'TermsandConditions',
+          'Returnandexchangepolicy',
         ),
         textColor: Colors.black,
         icon: Iconsax.document,

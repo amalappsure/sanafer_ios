@@ -42,7 +42,7 @@ class _CartScreenState extends ConsumerState<CartScreen> {
         title: settings.selectedLocale!.translate('Cart'),
         showCart: false,
         showSearch: false,
-        showActions: false,
+        showActions: true,
       ),
       body: cart.items.isNotEmpty
           ? RefreshIndicator.adaptive(

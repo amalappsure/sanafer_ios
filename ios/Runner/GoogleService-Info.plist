@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCc7-ORENvIZrBG37LaMxbAbJfr-TkIxh8</string>
+	<string>AIzaSyAnLd7oLuj4WAKWYhh9ltMf30d7Mv1GFYM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>29982109672</string>
+	<string>821491385956</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.demoApp</string>
+	<string>com.smartsolns.smartecom</string>
 	<key>PROJECT_ID</key>
-	<string>alsanafer-6cab7</string>
+	<string>alsanafer-15719</string>
 	<key>STORAGE_BUCKET</key>
-	<string>alsanafer-6cab7.appspot.com</string>
+	<string>alsanafer-15719.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:29982109672:ios:760737afbb6d6f00bc3e5d</string>
+	<string>1:821491385956:ios:79f53f35e6945d77748171</string>
 </dict>
 </plist>
